@@ -54,6 +54,10 @@ header h1{
     background-color: deepskyblue;
 }
 
+#search button:focus {
+    outline: none;
+}
+
 #weather {
     padding: 30px;
     border: 1px solid #ccc;
