@@ -4,8 +4,10 @@ This is a simple application developed using the front end technologies HTML, CS
 
 This application uses the open weather API to get the details of weather specific to the location
 
-![application]()
+![application](https://github.com/konman01/Weather-App/blob/master/images/capture1.png)
 
-![Provide location Details]()
+![Provide location Details](https://github.com/konman01/Weather-App/blob/master/images/capture2.png)
 
-![result]()
+![result](https://github.com/konman01/Weather-App/blob/master/images/capture3.png)
+
+[ Reference ](https://www.udemy.com/course/javascript-bootcamp-2016/)
