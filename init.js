@@ -1,5 +1,6 @@
 "use strict";
 
+// Get the DOM values
 var serachButton = document.querySelector('button');
 var searchCity = document.querySelector('#city');
 

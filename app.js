@@ -2,6 +2,7 @@
 
 serachButton.addEventListener('click', searchWeather);
 
+
 function searchWeather() {
     loadingText.style.display = 'block';
     weatherBox.style.display = 'none';
@@ -10,6 +11,7 @@ function searchWeather() {
         alert('Please enter a city Name');
     }
 
+    // Send the request to open weather map api to get the weather data
     var http = new XMLHttpRequest();
     var apiKey = '35290d1eb99b8e23db95c553ac37adb7';
     var url = 'http://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&units=metric&appid='+apiKey;
@@ -17,6 +19,7 @@ function searchWeather() {
 
     http.open(method, url);
 
+    // register Function to get the response from the API
     http.onreadystatechange = function () {
         
         if (http.readyState == XMLHttpRequest.DONE && http.status === 200) {
@@ -33,6 +36,7 @@ function searchWeather() {
 
 }
 
+// Update DOM with the result
 function updateWeather(weatherData) {
     weatherCity.textContent = weatherData.cityName;
     weatherDescription.textContent = weatherData.description;
